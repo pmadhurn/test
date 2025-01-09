@@ -1,0 +1,109 @@
+/* Main container to prevent overlap */
+.app-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Content area next to the navbar */
+.content {
+    margin-left: 200px;
+    /* Same width as the navbar */
+    padding: 20px;
+    /* Add some padding for aesthetics */
+    width: calc(100% - 200px);
+    /* Take the remaining space */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+    min-height: 100vh;
+    /* Full height for consistency */
+    background-color: #f4f4f4;
+    /* Optional background color for content */
+}
+
+/* Navbar styling */
+.navbar {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: 100vh;
+    /* Full height */
+    background-color: #2d2d2d;
+    /* Linux-like dark background */
+    position: fixed;
+    /* Fix to the left of the page */
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack the links vertically */
+    padding-top: 20px;
+    /* Space from the top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    /* Optional shadow for better visibility */
+}
+
+.ulist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navtext {
+    display: block;
+    color: #ffffff;
+    /* White text for contrast */
+    text-decoration: none;
+    padding: 10px 15px;
+    /* Spacing for each link */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.navtext:hover {
+    background-color: #575757;
+    /* Slightly lighter hover effect */
+    cursor: pointer;
+}
+
+.navtext.active {
+    background-color: #444444;
+    /* Highlight the active link */
+}
+
+.api1table {
+    width: 80%;
+    /* Adjust width to your preference, e.g., 80% of the parent container */
+    margin: 20px auto;
+    /* Center the table horizontally */
+    border-collapse: collapse;
+    /* Clean look for borders */
+    text-align: left;
+    /* Align text to the left */
+    font-family: Arial, sans-serif;
+    /* Optional: consistent font */
+    font-size: 14px;
+    background-color: #ffffff;
+    /* Optional: white background for contrast */
+    border: 1px solid #ddd;
+    /* Border around the table */
+}
+
+.api1table th,
+.api1table td {
+    padding: 10px;
+    /* Space inside each cell */
+    border: 1px solid #ddd;
+    /* Border between cells */
+}
+
+.api1table th {
+    background-color: #f4f4f4;
+    /* Light gray background for header */
+    font-weight: bold;
+    /* Bold text for header */
+}
+
+.api1table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Alternate row color */
+}
