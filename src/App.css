@@ -6,7 +6,7 @@
 
 /* Content area next to the navbar */
 .content {
-    margin-left: 200px;
+    margin-left: 220px;
     /* Same width as the navbar */
     padding: 20px;
     /* Add some padding for aesthetics */
@@ -106,4 +106,38 @@
 .api1table tr:nth-child(even) {
     background-color: #f9f9f9;
     /* Alternate row color */
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    /* Fixed navbar width */
+    height: 100vh;
+    /* Full vertical height */
+    background-color: #333;
+    /* Dark background */
+    padding: 20px;
+    overflow-y: auto;
+    /* Scrollable if content overflows */
+}
+
+.ulist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navtext {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.navtext:hover {
+    background-color: #555;
 }
